@@ -1,0 +1,22 @@
+.wrapper {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.title {
+  font-size: large;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.text {
+  font-size: medium;
+  font-weight: normal;
+  color: black;
+  text-align: center;
+  padding: 0em 1em;
+}

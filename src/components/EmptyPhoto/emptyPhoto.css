@@ -1,0 +1,12 @@
+.empty-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  min-width: 250px;
+  position: relative;
+}
+
+.float-button {
+  position: absolute;
+}

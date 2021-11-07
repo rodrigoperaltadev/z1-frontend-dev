@@ -1,11 +1,11 @@
-import axios, { AxiosResponse } from 'axios'
+import { api } from './index'
 import { CreateIDResponse } from './interfaces'
 
-class ID {
+const Id = {
   async createIDPayload(): Promise<CreateIDResponse> {
-    const response = await axios.post('https://front-exercise.z1.digital/evaluations')
+    const response = await api.post('evaluations')
     return response.data
   }
 }
 
-export default ID
+export default Id

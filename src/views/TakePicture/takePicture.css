@@ -1,13 +1,25 @@
+.tp-view {
+  height: 100vh;
+  background-color: #10161e;
+  display: flex;
+  justify-content: center;
+
+}
+
 .tp-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1em;
+  gap: 3em;
   padding: 1em;
-  height: 100vh;
-  background-color: #10161e;
-  
   text-align: center;
+  margin: 3em 0em;
+}
+
+.tp-container header {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .tp-title {
@@ -36,4 +48,8 @@
 
 .cancel-button:hover {
   cursor: pointer;
+}
+.icon.bulb {
+  margin-right: 0.5em;
+  fill: #f9c851;
 }

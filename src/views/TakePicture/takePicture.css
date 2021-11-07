@@ -1,0 +1,39 @@
+.tp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  height: 100vh;
+  background-color: #10161e;
+  
+  text-align: center;
+}
+
+.tp-title {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.tp-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em
+}
+
+.tp-text {
+  color: white;
+  font-size: large;
+}
+
+.cancel-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: large;
+}
+
+.cancel-button:hover {
+  cursor: pointer;
+}

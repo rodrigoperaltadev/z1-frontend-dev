@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import api from './api'
 import { OUTCOMES } from './constants'
-import { AppProvider } from './context'
 import { Home, TakePicture } from './views'
 
 const VIEWS = {
@@ -16,10 +15,9 @@ const App = () => {
   
   const createId = async () => {
     const { summary } = await api.id.createIDPayload()
-    console.log(summary)
     setHasPhoto(true)
     setBadPhoto(summary.outcome !== OUTCOMES.APPROVE)
-   }
+  }
 
   const [currentView, setCurrentView] = useState(VIEWS.HOME)
   const handleTakePictureButtonClick = () => setCurrentView(VIEWS.TAKE_PICTURE)
@@ -39,7 +37,7 @@ const App = () => {
         createId={createId}
       />
 
-  return (<AppProvider>{content}</AppProvider>);
+  return (<>{content}</>);
 }
 
 export default App
